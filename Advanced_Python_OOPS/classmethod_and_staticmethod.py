@@ -1,7 +1,7 @@
 # @@Classmethod and @@staticmethod
 
 # Class method is something which we can call without creating an object.
-# static method is something which we can call without creating object but no need to cls variable
+# static method is something which we can call without creating object but no need to "cls" variable
 # as shown belpow
 # These are also called as Decorators.
 
