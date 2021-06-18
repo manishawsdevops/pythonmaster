@@ -1,0 +1,4 @@
+1. We can use the floating points upto 2 decimals using below.
+ex: print({num:.2f})    Where num is a variable.
+
+2.

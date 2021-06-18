@@ -36,3 +36,12 @@ Naming of the variables should be maintained properly.
 
 #Developer Funamentals V
 
+
+#Developer Fundamentals VI
+Pros and Cons in Libraries.
+We should be very concisious when using the libraries.
+If we put on libraries when isntalling those, they might become heavier.
+
+# Developer Fundamentals VII
+Pick the right Library
+

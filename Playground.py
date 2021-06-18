@@ -1,13 +1,43 @@
-a = [(0, 2), (4, 3), (9, 9), (10, -1)]
+import re
 
-b = list(map(lambda param: param[1], a))
+matrix = [['T', 's', 'i'], ['h', '%', 'x'], ['i', ' ', '#'], [
+    's', 'M', ' '], ['$', 'a', ' '], ['#', 't', '%'], ['i', 'r', '!']]
+# new = list(map(lambda x: x[0], k))
 
-b.sort()
-# print(b)
+# str1 = ''.join(new)
 
-c = []
+# print(str1)
+# li = []
 
-for i in b:
-    c = c + (list(filter(lambda param: i in param, a)))
+m = 7
+n = 3
 
-print(c)
+li = ['']*(m*n)
+
+for i, j in enumerate(matrix):
+    # print(j)
+    for a, b in enumerate(j):
+        # print(b)
+        # # # print(idx, item)
+        dest = a*7 + i
+        # # print(dest)
+        # print(b, end='')
+        li[dest] = b
+        # print(b)
+        # print(li[dest])
+        # # # print(a, b)
+        # # print(b, end='')
+        # # print(dest, end='')
+    # print('\n')
+
+print(li)
+
+mystring = ''.join(map(str, li))
+
+print(mystring)
+
+pattern = re.compile(r"[a-zA-Z]\W+[a-zA-Z]")
+
+print(re.sub(r"([a-zA-Z])(\W+)([a-zA-Z])", r"\1 \3", mystring))
+
+# li(pattern.findall(mystring))
