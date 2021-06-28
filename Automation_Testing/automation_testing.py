@@ -1,15 +1,15 @@
 # We can use the selenium package for Testing automation.
+# http://allselenium.info/python-selenium-commands-cheat-sheet-frequently-used/
+# https://www.seleniumeasy.com/test/
+
+
 from selenium import webdriver
 
-option = webdriver.ChromeOptions()
-option.add_argument('disable-infobars')
-option.add_experimental_option("excludeSwitches", ['enable-automation'])
+chrome_browser = webdriver.Chrome('./chromedriver.exe')
 
-chrome_browser = webdriver.Chrome(
-    chrome_options=option, executable_path='./chromedriver.exe')
+chrome_browser.get(
+    'https://www.seleniumeasy.com/test/basic-first-form-demo.html')
 
-url = 'https://www.google.com'
+assert "Selenium Easy Demo - Simple Form to Automate using Selenium" in chrome_browser.title
 
-chrome_browser.get(url=url)
-
-print(chrome_browser)
+chrome_browser.quit()
