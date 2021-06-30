@@ -45,3 +45,6 @@ If we put on libraries when isntalling those, they might become heavier.
 # Developer Fundamentals VII
 Pick the right Library
 
+# Python Cheatsheet.
+# https://github.com/aneagoie/ztm-python-cheat-sheet
+
