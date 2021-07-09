@@ -11,6 +11,6 @@ my_list = [1, 2, 3]
 
 print(list(map(lambda param: param*2, my_list)))
 print(list(filter(lambda param: param % 2 != 0, my_list)))
-print(reduce(lambda acc, param: acc+param, my_list, 10))
+print(reduce(lambda acc, param: acc+param, my_list))
 
 # Understand the above carefully. This can be tricky.
